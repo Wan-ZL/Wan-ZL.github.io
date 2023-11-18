@@ -4,7 +4,7 @@ title: Publications
 subtitle: Let's connect and explore the future of technology together!
 ---
 
-I can also be found on [Google Scholar](https://scholar.google.com/citations?user=0Z8N7zYAAAAJ) 
+I can also be found on [Google Scholar](https://scholar.google.com/citations?user=0Z8N7zYAAAAJ).
 
 **In Preparation**
 
