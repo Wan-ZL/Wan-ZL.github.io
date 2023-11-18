@@ -20,7 +20,8 @@ author: Zelin Wan
 ###############################################
 
 navbar-links:
-  Home: "index"
+  Home: "https://wan-zl.github.io"
+  Google Scholar: "https://scholar.google.com/citations?user=0Z8N7zYAAAAJ"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
