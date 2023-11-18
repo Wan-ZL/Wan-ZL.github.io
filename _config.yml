@@ -22,11 +22,11 @@ author: Zelin Wan
 navbar-links:
   Home: "https://wan-zl.github.io"
   Publications: "publications"
-  Google Scholar: "https://scholar.google.com/citations?user=0Z8N7zYAAAAJ"
-  Linkedin: "https://www.linkedin.com/in/zelinwan"
   Resources:
     - Trustworthy Cyberspace Lab (tClab): "https://people.cs.vt.edu/jicho/index.html"
     - People at tClab: "https://people.cs.vt.edu/jicho/people.html"
+    - Google Scholar: "https://scholar.google.com/citations?user=0Z8N7zYAAAAJ"
+    - Linkedin: "https://www.linkedin.com/in/zelinwan"
 
 
 ################
