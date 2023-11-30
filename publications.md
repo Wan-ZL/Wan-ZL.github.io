@@ -6,28 +6,6 @@ subtitle: Let's connect and explore the future of technology together!
 
 I can also be found on **[Google Scholar](https://scholar.google.com/citations?user=0Z8N7zYAAAAJ).**
 
-**In Preparation**
-
-- **Strategic Shared Mental Model as Cyber Deception to Protect a Human-Machine Teaming System**  
-  Z. Wan, J.H. Cho, M. Zhu, A. Anwar, C. Kamhoua, M. P. Singh  
-
-- **Decision Theory-Guided Deep Reinforcement Learning for Fast Learning**  
-  Z. Wan, J.H. Cho, M. Zhu, A. Anwar, C. Kamhoua, M. P. Singh  
-
-- **A Survey of Secure and Resilient Human-Machine Teaming Systems in Cyberspaces**  
-  Z. Wan, Dian. C, J.H. Cho, R. He, N. Alluru  
-
-**Under Review**
-
-- **Game Theoretic Deep Reinforcement Learning for Drone Surveillance Mission**  
-  Z. Wan, J.H. Cho, M. Zhu, A. Anwar, C. Kamhoua, M. P. Singh  
-  *Submitted to Network and Distributed System Security Symposium*  
-
-- **Optimizing Effectiveness of Drone Surveillance Missions via Honey Drones**  
-  Z. Wan, J.H. Cho, M. Zhu, A. Anwar, et al.  
-  *Submitted to Annual International Conference on Mobile Computing and Networking*
-
-
 **2023**
 
 - **A Survey on Uncertainty Reasoning and Quantification in Belief Theory and Its Application to Deep Learning**  
@@ -74,3 +52,23 @@ I can also be found on **[Google Scholar](https://scholar.google.com/citations?u
   *IEEE Transactions on Network and Service Management, Jun. 2021*  
   [Paper](https://ieeexplore.ieee.org/abstract/document/9462505/)
 
+**Under Review**
+
+- **Game Theoretic Deep Reinforcement Learning for Drone Surveillance Mission**  
+  Z. Wan, J.H. Cho, M. Zhu, A. Anwar, C. Kamhoua, M. P. Singh  
+  *Submitted to Network and Distributed System Security Symposium*  
+
+- **Optimizing Effectiveness of Drone Surveillance Missions via Honey Drones**  
+  Z. Wan, J.H. Cho, M. Zhu, A. Anwar, et al.  
+  *Submitted to Annual International Conference on Mobile Computing and Networking*
+
+**In Preparation**
+
+- **Strategic Shared Mental Model as Cyber Deception to Protect a Human-Machine Teaming System**  
+  Z. Wan, J.H. Cho, M. Zhu, A. Anwar, C. Kamhoua, M. P. Singh  
+
+- **Decision Theory-Guided Deep Reinforcement Learning for Fast Learning**  
+  Z. Wan, J.H. Cho, M. Zhu, A. Anwar, C. Kamhoua, M. P. Singh  
+
+- **A Survey of Secure and Resilient Human-Machine Teaming Systems in Cyberspaces**  
+  Z. Wan, Dian. C, J.H. Cho, R. He, N. Alluru  
