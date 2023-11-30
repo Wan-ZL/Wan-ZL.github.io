@@ -22,6 +22,7 @@ author: Zelin Wan
 navbar-links:
   Home: "https://wan-zl.github.io"
   Publications: "publications"
+  CV: "CV"
   Resources:
     - Trustworthy Cyberspace Lab (tClab): "https://people.cs.vt.edu/jicho/index.html"
     - People at tClab: "https://people.cs.vt.edu/jicho/people.html"
