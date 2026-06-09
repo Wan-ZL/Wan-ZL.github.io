@@ -21,6 +21,8 @@ author: Zelin Wan
 
 navbar-links:
   Home: "https://wan-zl.github.io"
+  About: "about"
+  Projects: "projects"
   Publications: "publications"
   CV: "CV"
   Resources:
@@ -54,13 +56,13 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "zelin@vt.edu"
+  email: "wanzelin007@gmail.com"
   # rss: true  # remove this line if you don't want to show an RSS link at the bottom
   # facebook: deanattali
   github: Wan-ZL
   # twitter: daattali
   # patreon: DeanAttali
-  youtube: /@ZelinWan
+  youtube: "@ZelinWan"
 #  medium: yourname
 #  reddit: yourname
   linkedin: zelinwan
@@ -69,7 +71,6 @@ social-network-links:
 #  snapchat: deanat78
 #  instagram: deanat78
 #  spotify: yourname
-  telephone: +15204618509
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
@@ -86,11 +87,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
-
-# If you want your website to generate an RSS feed, provide a description
-# The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: "Zelin Wan: ML / Research Engineer working on LLM post-training (SFT, DPO, RLVR with GRPO), reinforcement learning, and evaluation environments. CS PhD in reinforcement learning and cybersecurity."
 
 ###########################
 # --- General options --- #
@@ -128,7 +125,7 @@ edit_page_button: False
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "LLM post-training, RLVR, GRPO, SFT, DPO, RLHF, reinforcement learning, model evaluation, evaluation environments, agent benchmark, AI safety, cybersecurity, machine learning, PyTorch, Zelin Wan"
 
 ######################################
 # --- Colours / background image --- #

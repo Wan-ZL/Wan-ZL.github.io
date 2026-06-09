@@ -1,37 +1,29 @@
 ---
-layout: home
+layout: page
 title: Zelin Wan
-subtitle: PhD Candidate in Computer Science
+subtitle: ML / Research Engineer | LLM post-training, evaluation, and reinforcement learning
 ---
 
 <p>
-    I am Zelin Wan (万泽林 in Chinese), a Ph.D. candidate at 
-    <a href="https://nvc.cs.vt.edu" target="_blank">Virginia Tech's Computer Science Department</a>, 
-    working in the 
-    <a href="https://people.cs.vt.edu/jicho/index.html" target="_blank">Trustworthy Cyberspace Lab (tClab)</a> 
-    specializing in deep learning, game theory, cybersecurity, and network science. My academic foundation was laid with a B.S. in 
-    <a href="https://www.cs.arizona.edu" target="_blank">Computer Science</a> 
-    and a minor in 
-    <a href="https://www.math.arizona.edu" target="_blank">Mathematics</a> 
-    from the University of Arizona in 2019, followed by an M.S. in Computer Science from Virginia Tech in 2021.
+    I work on LLM post-training and evaluation. The thread across my work is building the training pipeline and the benchmark that judges it. I run supervised fine-tuning, DPO, reinforcement learning with verifiable rewards (RLVR with GRPO), and reinforcement fine-tuning (RFT) on open-weight models, and I design the agent evaluation environments that measure whether the training actually moved capability.
+</p>
+
+<ul>
+    <li><strong>Model training.</strong> SFT, DPO, RLVR with GRPO, and RFT in a multi-phase pipeline on large-scale GPU infrastructure.</li>
+    <li><strong>Model evaluation.</strong> Agent and tool-use benchmarks built as measurement instruments, with deterministic validators, anti-contamination, and capability-vs-refusal metrics.</li>
+    <li><strong>Reinforcement learning.</strong> From RLVR for LLMs to classical deep RL (PPO, A3C, DQN) across my PhD research.</li>
+    <li><strong>AI security.</strong> A CS PhD in game-theoretic and deep RL for cyber-defense, now applied to LLM RL.</li>
+</ul>
+
+<p>
+    On the evaluation side I treat benchmarks as instruments. I build agent and tool-use environments with deterministic validators, anti-contamination controls, bootstrap-CI scoring, and multi-trial averaging, and I rebuild task suites when frontier models saturate them so the benchmark keeps a meaningful discriminative spread. I also work on separating real capability from safety-driven refusal, so a model is not scored as weaker than it is just because it abstains.
 </p>
 
 <p>
-    My research, recognized by the nomination for the 
-    <a href="https://graduateschool.vt.edu/funding/funding-sponsored-by-the-graduate-school.html" target="_blank">Joseph Frank Hunkler Memorial Scholarship</a> 
-    and the College of Engineering Graduate Student Publication Fellowship, has been published in prominent IEEE Journals/Conferences and ACM Conferences. These works primarily focus on projects funded by the 
-    <a href="https://arl.devcom.army.mil/" target="_blank">U.S. Army Research Office</a>. 
-    Additionally, my professional experience includes internships at 
-    <a href="https://www.bytedance.com" target="_blank">ByteDance</a> 
-    and 
-    <a href="https://i-fusion-i.com" target="_blank">Intelligent Fusion Technology</a>, 
-    where I applied advanced machine learning techniques to recommendation systems and AI-driven military aircraft maintenance solutions.
+    I am currently a Senior AI Software Engineer at <a href="https://www.postman.com" target="_blank">Postman</a> in San Francisco, and earlier built production ML systems (VQA, RAG, large-image computer vision) at Bobyard. My CS PhD at <a href="https://www.cs.vt.edu" target="_blank">Virginia Tech</a> was on game-theoretic and deep RL methods for cyber-defense, and I have 15 papers (9 first-author) on reinforcement learning, uncertainty quantification, and cybersecurity. If you are working on post-training, evaluation, RL environments, or the security side of frontier models, I would be glad to talk.
 </p>
 
+<h2>Selected tools and methods</h2>
 <p>
-    As an ACM member, I am committed to contributing to the academic community. My research interests include machine/deep learning in reinforcement learning and computer vision, explainable AI, transfer learning, human-machine teaming, game theory, cybersecurity, and network science.
-</p>
-
-<p>
-    I am keen on collaborating and exploring new opportunities that challenge and broaden my horizons in the ever-evolving field of technology. Let's connect and explore the future of technology together!
+    SFT, DPO, RLVR, GRPO, RFT, reward design, agent benchmarks and evaluation environments, anti-contamination, bootstrap-CI scoring, multi-trial averaging, capability-vs-abstention metrics, PyTorch, Python, distributed GPU/CPU pipelines, deep RL (PPO, A3C, DQN), computer vision (ViT, SAM, YOLO), LoRA.
 </p>
