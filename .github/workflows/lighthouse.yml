@@ -1,0 +1,50 @@
+name: Lighthouse CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+permissions: read-all
+
+jobs:
+  lighthouse:
+    name: Lighthouse Audit
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli@0.14.x
+
+      - name: Run Lighthouse
+        run: |
+          lhci autorun \
+            --collect.url="${SITE_URL:-http://localhost:8080}" \
+            --collect.numberOfRuns=1 \
+            --assert.assertions.categories:performance=off \
+            --assert.assertions.categories:accessibility=off \
+            --assert.assertions.categories:best-practices=off \
+            --assert.assertions.categories:seo=off \
+            --upload.target=temporary-public-storage
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+          # Set SITE_URL as a repository variable or secret to your deployed URL
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      - name: Archive Lighthouse results
+        if: success() || failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-results
+          path: .lighthouseci/
+          retention-days: 14

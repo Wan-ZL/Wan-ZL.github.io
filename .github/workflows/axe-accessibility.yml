@@ -1,0 +1,66 @@
+name: Accessibility Audit (axe-core)
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+permissions: read-all
+
+jobs:
+  accessibility:
+    name: axe-core Accessibility Scan
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Start local server
+        run: |
+          npx http-server . -p 8080 -c-1 --silent &
+          sleep 3
+
+      - name: Run axe-core scan
+        run: |
+          npx @axe-core/cli@latest "${SITE_URL:-http://localhost:8080}" \
+            --exit \
+            --tags wcag2a,wcag2aa,best-practice \
+            --stdout > axe-results.json 2>&1 || true
+
+      - name: Display results summary
+        run: |
+          if [ -f axe-results.json ]; then
+            echo "=== Accessibility Scan Results ==="
+            node -e "
+              const fs = require('fs');
+              try {
+                const data = JSON.parse(fs.readFileSync('axe-results.json', 'utf8'));
+                if (Array.isArray(data)) {
+                  const violations = data.flatMap(d => d.violations || []);
+                  console.log('Total violations:', violations.length);
+                  violations.forEach(v => {
+                    console.log('  [' + v.impact + '] ' + v.id + ': ' + v.description);
+                    console.log('    Nodes:', v.nodes.length);
+                  });
+                }
+              } catch(e) {
+                console.log('Could not parse results:', e.message);
+              }
+            "
+          fi
+
+      - name: Archive accessibility results
+        if: success() || failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: axe-accessibility-results
+          path: axe-results.json
+          retention-days: 14
